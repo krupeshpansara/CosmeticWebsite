@@ -1,7 +1,7 @@
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 /* General Body Styling */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   background-color: #fff5f8;
   color: #333;
@@ -57,7 +57,8 @@ button:hover {
   background: #ff9671;
 }
 /* Global Styles */
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   display: flex;
@@ -86,7 +87,9 @@ footer.footer {
   position: relative;
 }
 
-.footer-brand, .footer-links, .footer-social {
+.footer-brand,
+.footer-links,
+.footer-social {
   flex: 1 1 300px;
 }
 
@@ -125,5 +128,24 @@ footer.footer {
     text-align: center;
     flex-direction: column;
     position: relative;
+  }
+}
+
+.cosmetic-scroll {
+  /* Target the container where you want the custom scrollbar */
+
+  /* Custom Scrollbar Styles */
+  &::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #ffffff; /* Track color */
+    border-radius: 5px; /* Rounded track edges */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #fb5299, #ffa4b3);
+    border-radius: 5px; /* Rounded thumb edges */
   }
 }

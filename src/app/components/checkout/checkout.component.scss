@@ -1,0 +1,81 @@
+/* Container Styling */
+.container {
+  max-width: 960px;
+  margin: 0 auto; /* Center align the container */
+  padding: 1rem; /* Add padding around the container */
+}
+
+/* Heading */
+h2 {
+  font-size: 1.5rem; /* Large text for the heading */
+  font-weight: 700; /* Bold text */
+  margin-bottom: 1rem; /* Space below the heading */
+  color: #333333; /* Darker text color for readability */
+}
+
+/* Form Styling */
+form {
+  max-width: 600px; /* Limit the width of the form */
+  margin: 0 auto; /* Center align the form */
+  background-color: #ffffff; /* White background */
+  border: 1px solid #e2e8f0; /* Light border for separation */
+  border-radius: 0.5rem; /* Rounded corners */
+  padding: 2rem; /* Add padding inside the form */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%; /* Full width */
+  border: 1px solid #d1d5db; /* Light border */
+  padding: 0.5rem; /* Padding inside input fields */
+  border-radius: 0.375rem; /* Slightly rounded corners */
+  font-size: 1rem; /* Standard font size */
+  color: #1a202c; /* Darker text color */
+  background-color: #f9fafb; /* Light background color */
+}
+
+input:focus,
+textarea:focus {
+  outline: none; /* Remove default outline */
+  border-color: #3b82f6; /* Highlight border on focus */
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2); /* Blue focus ring */
+}
+
+/* Labels */
+label {
+  display: block; /* Ensure labels are block elements */
+  margin-bottom: 0.5rem; /* Space below label */
+  font-size: 0.875rem; /* Slightly smaller font size */
+  font-weight: 500; /* Medium weight */
+  color: #4a5568; /* Gray color */
+}
+
+/* Submit Button */
+button[type="submit"] {
+  background-color: #3b82f6; /* Blue background */
+  color: #ffffff; /* White text */
+  padding: 0.5rem 1rem; /* Padding for button */
+  border: none; /* Remove border */
+  border-radius: 0.375rem; /* Rounded corners */
+  font-size: 1rem; /* Standard font size */
+  font-weight: 600; /* Bold text */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.2s ease; /* Smooth transition */
+}
+
+button[type="submit"]:hover {
+  background-color: #2563eb; /* Darker blue on hover */
+}
+
+/* Card Element */
+#card-element {
+  border: 1px solid #d1d5db; /* Light border */
+  padding: 0.5rem; /* Add padding */
+  border-radius: 0.375rem; /* Rounded corners */
+  background-color: #f9fafb; /* Light background color */
+  color: #1a202c; /* Text color */
+  margin-bottom: 1rem; /* Space below card element */
+}

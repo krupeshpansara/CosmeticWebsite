@@ -1,1 +1,88 @@
-<p>cart works!</p>
+<div class="cart-container">
+  <div class="cart">
+    <div class="cart-item-container">
+      <div class="cart-item-container-header">
+        <p>
+          <span>
+            <i class="bi bi-bag-heart"></i>
+          </span>
+          <span> Cart </span>
+        </p>
+      </div>
+      <div class="card-box">
+        <div class="card-header">
+          <div class="cart-title">items</div>
+          <div class="cart-title">price</div>
+          <div class="cart-title">qty</div>
+          <div class="cart-title">total</div>
+        </div>
+        <div class="card-scroler cosmetic-scroll">
+          <div class="item-card" *ngFor="let item of cartArray">
+            <div class="item-row">
+              <div class="item-img">IMG</div>
+              <h1>
+                Shampoo <span><i class="bi bi-patch-check-fill"></i></span>
+              </h1>
+              <h5>#Best product</h5>
+            </div>
+            <div class="item-row">
+              <span><i class="bi bi-currency-dollar"></i> </span>
+              <p>29.95</p>
+            </div>
+            <div class="item-row">
+              <button class="plus-btn"><i class="bi bi-plus"></i></button>
+              <div>{{ item }}</div>
+              <button class="dash-btn"><i class="bi bi-dash"></i></button>
+            </div>
+            <div class="item-row">
+              <span><i class="bi bi-currency-dollar"></i> </span>
+              <p>29.95</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cart-payment-container">
+      <div class="divaider"></div>
+      <div class="caart-total">
+        <div class="total">
+          <p>cart total</p>
+          <p class="price">
+            <i class="bi bi-currency-dollar"></i> <span> 189.00</span>
+          </p>
+        </div>
+        <div class="total-text">shipping & taxes calculated at Checkout</div>
+      </div>
+      <div class="agree-box">
+        <input type="checkbox" id="is-agree" />
+        <label for="is-agree" class="checkbox-label">
+          i agree to
+          <span>Terms & condition</span>
+        </label>
+      </div>
+      <div class="user-text">
+        <label for="description">Add A Note</label>
+        <textarea
+          class="textarea"
+          name="description"
+          id="description"
+          rows="4"
+          placeholder="Some words to in house team"
+        ></textarea>
+      </div>
+      <div class="button-group">
+        <button>Checkout <i class="bi bi-cart-check"></i></button>
+      </div>
+    </div>
+  </div>
+  <div class="cart-footer">
+    <div class="footer-icon-group">
+      <div class="footer-icon">
+        <i class="bi bi-instagram"></i>
+      </div>
+      <div class="footer-icon">
+        <i class="bi bi-whatsapp"></i>
+      </div>
+    </div>
+  </div>
+</div>

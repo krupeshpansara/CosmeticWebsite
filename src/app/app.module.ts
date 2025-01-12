@@ -12,6 +12,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { CheckoutComponent } from './components/checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
     FooterComponent,
     AboutUsComponent,
     ContactUsComponent,
+    CheckoutComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,6 +39,7 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
       { path: 'cart', component: CartComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'contact', component: ContactUsComponent },
+      { path: 'CheckOut', component: CheckoutComponent },
     ]),
   ],
   providers: [],
