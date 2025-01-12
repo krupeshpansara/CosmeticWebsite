@@ -1,0 +1,79 @@
+/* Footer General Styles */
+.footer {
+  background: linear-gradient(90deg, #ff6f91, #ff9671);
+  color: #fff;
+  padding: 50px 20px;
+  // position: sticky;
+  // bottom: 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  // position: relative;
+}
+
+.footer-brand,
+.footer-links,
+.footer-social {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.footer-brand h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.footer-links h3,
+.footer-social h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ffedd5;
+}
+
+.footer-social .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-social .social-icons i {
+  font-size: 1.5rem;
+  color: #fff;
+  transition: transform 0.3s;
+}
+
+.footer-social .social-icons i:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    text-align: center;
+    flex-direction: column;
+  }
+}

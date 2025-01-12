@@ -1,0 +1,129 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+/* General Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #fff5f8;
+  color: #333;
+}
+
+/* Header Styling */
+.header {
+  background: #ff6f91;
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.header a:hover {
+  color: #ffe3e3;
+}
+
+/* Card Styles */
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Buttons */
+button {
+  background: #ff6f91;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #ff9671;
+}
+/* Global Styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.products-container {
+  flex: 1; /* This will make the content take up all available space */
+}
+
+footer.footer {
+  background: linear-gradient(90deg, #ff6f91, #ff9671);
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+  position: sticky;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
+}
+
+.footer-brand, .footer-links, .footer-social {
+  flex: 1 1 300px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ffe3e3;
+}
+
+.footer-social .social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.footer-social .social-icons i {
+  font-size: 1.5rem;
+  transition: transform 0.3s;
+}
+
+.footer-social .social-icons i:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+  }
+}
